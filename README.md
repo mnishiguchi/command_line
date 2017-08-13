@@ -1,55 +1,13 @@
 # Linux notes
 
-## Reading materials
-
-- LinuxFoundationX: LFS101x.2 Introduction to Linux
-- [Learn Enough Command Line to Be Dangerous](https://www.learnenough.com/command-line-tutorial)
-- [The Linux Command Line](http://wiki.lib.sun.ac.za/images/c/ca/TLCL-13.07.pdf)
-- [Command Line Fu](http://www.commandlinefu.com/commands/browse/sort-by-votes)
-
-## Basics
-
-**echo**
-- We can use either double quotes or single quotes
-- but in many contexts they are not required by echo
-
-```shell
-$ echo "goodbye"
-goodbye
-$ echo 'goodbye'
-goodbye
-$ echo goodbye
-goodbye
-$
-```
-
-**Getting out of trouble**
-- **Ctrl-C**
-- When Ctrl-C fails, 90% of the time hitting **ESC** (escape) will do the trick.
-
-**Man pages**
-- short for “manual”
-- format and display the on-line manual pages
-- The interface is the same as for the less program
-- The presence of a colon : indicates that there is more information below
-- To access subsequent information
-    - one line at a time by pressing the down arrow key
-    - one page at a time by pressing the spacebar
-- To exit the man page, press “q”
-
-**Editing the line**
-- **Ctrl-A** move to the beginning of the line
-- **Ctrl-E** move to the end of the line
-- **Ctrl-U** clears to the beginning of the line and lets us start over.
-- Note: Hitting **Ctrl-U** and starting over again is ofternthe fastest way to proceed.
-
-**Clearing the screen**
-- `$ clear`
-- **Ctrl-L**
-
-**Exiting a terminal window (or tab)**
-- `$ exit`
-- **Ctrl-D**
+- [environment](https://gist.github.com/mnishiguchi/323ac53152cc2a4fbba71ae54ebd1ef0)
+- [expansions](https://gist.github.com/mnishiguchi/087d83e9c5f9bd73dc5493de29b20469)
+- [keyboard tricks](https://gist.github.com/mnishiguchi/551827405074c3f2a08d8875c850deff)
+- [man pages](https://gist.github.com/mnishiguchi/d064099c6573e0e434e390d79d874fa8)
+- [network](https://gist.github.com/mnishiguchi/690b59ba312f3dce246666065722cc5f)
+- [processes](https://github.com/mnishiguchi/linux_notes/tree/master/notes/processes)
+- [processes - commands](https://gist.github.com/mnishiguchi/f6e9c1c42abaaab18e656ae7f978ff06)
+- [vim](https://gist.github.com/mnishiguchi/b8f2effca20fa181ac491735d6ffa07c)
 
 ---
 
@@ -58,10 +16,14 @@ $
 ```bash
 # Jump to a directory, execute a command and jump back to current dir
 $ (cd /tmp && ls)
+```
 
+```bash
 # Quick access to the ascii table.
 $ man ascii
+```
 
+```bash
 # Get your external IP address
 $ curl ifconfig.me
 ```
@@ -70,14 +32,14 @@ $ curl ifconfig.me
 
 ## Keeping Current
 
-### Best practice
+#### Best practice
 - take advantage of your Linux distribution's mechanism for automatic updates and never postpone them
 - It is extremely rare that such an update will cause new problems.
 
-### Linux distribution's mechanism for automatic updates
+#### Linux distribution's mechanism for automatic updates
 When security problems in either the Linux kernel or applications and libraries are discovered, Linux distributions have a good record of reacting quickly and pushing out fixes to all systems by updating their software repositories and sending notifications to update immediately. The same thing is true with bug fixes and performance improvements that are not security related.
 
-### Consequence of delaying updates
+#### Consequence of delaying updates
 It is well known that **many systems do not get updated frequently enough** and problems which have already been cured are allowed to remain on computers for a long time; this is **particularly true with proprietary operating systems** where users are either uninformed or distrustful of the vendor's patching policy as sometimes updates can cause new problems and break existing operations. **Many of the most successful attack vectors come from exploiting security holes for which fixes are already known but not universally deployed.**
 
 ---
@@ -104,3 +66,10 @@ dd if=/dev/sda of=/path/mbr-backup bs=512 count=1
 ```
 
 ---
+
+## References
+
+- LinuxFoundationX: LFS101x.2 Introduction to Linux
+- [Learn Enough Command Line to Be Dangerous](https://www.learnenough.com/command-line-tutorial)
+- [The Linux Command Line](http://wiki.lib.sun.ac.za/images/c/ca/TLCL-13.07.pdf)
+- [Command Line Fu](http://www.commandlinefu.com/commands/browse/sort-by-votes)

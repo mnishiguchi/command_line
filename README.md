@@ -8,6 +8,9 @@
 - [processes](https://github.com/mnishiguchi/linux_notes/tree/master/notes/processes)
 - [processes - commands](https://gist.github.com/mnishiguchi/f6e9c1c42abaaab18e656ae7f978ff06)
 - [vim](https://gist.github.com/mnishiguchi/b8f2effca20fa181ac491735d6ffa07c)
+- [su vs sudo](https://gist.github.com/mnishiguchi/95dd4d1ec903276af1d81c07b466798e)
+- [file search](https://gist.github.com/mnishiguchi/30105b139a5dc6f0c5206437512f9b4d)
+- [OS X](https://gist.github.com/mnishiguchi/90bb714d6a1f585db509dc8c9b5af25e)
 
 ---
 
@@ -69,7 +72,7 @@ dd if=/dev/sda of=/path/mbr-backup bs=512 count=1
 
 ## References
 
-- LinuxFoundationX: LFS101x.2 Introduction to Linux
-- [Learn Enough Command Line to Be Dangerous](https://www.learnenough.com/command-line-tutorial)
+- [LinuxFoundationX: LFS101x.2 Introduction to Linux](https://www.edx.org/course/introduction-linux-linuxfoundationx-lfs101x-1)
 - [The Linux Command Line](http://wiki.lib.sun.ac.za/images/c/ca/TLCL-13.07.pdf)
+- [Learn Enough Command Line to Be Dangerous](https://www.learnenough.com/command-line-tutorial)
 - [Command Line Fu](http://www.commandlinefu.com/commands/browse/sort-by-votes)
